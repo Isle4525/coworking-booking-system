@@ -1,1 +1,31 @@
-spring.application.name=coworking-booking-system
+spring:
+  application:
+    name: coworking-booking-system
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/coworking
+    username: admin
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+  flyway:
+    enable: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE
