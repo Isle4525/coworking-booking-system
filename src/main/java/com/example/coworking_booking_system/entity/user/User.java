@@ -1,4 +1,4 @@
-package com.example.coworking_booking_system.entity.User;
+package com.example.coworking_booking_system.entity.user;
 
 
 import jakarta.persistence.*;

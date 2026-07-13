@@ -1,4 +1,4 @@
-package com.example.coworking_booking_system.entity.Workspace;
+package com.example.coworking_booking_system.entity.workspace;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
